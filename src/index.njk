@@ -8,5 +8,15 @@ layout: base.njk
     <img src="https://media.giphy.com/media/l0HlRDXTV4uZn3h6g/giphy.gif" alt="Towelie"/>
     <div class="vibe"></div>
     <div class="love">❤️❤️❤️</div>
+
+    <ul>
+    {% for article in news.articles %}
+        <li>
+            <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+            <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+
+        </li>
+    {% endfor %}
+    </ul>
 </div>
 <script src="/js/vibe.js"></script>
