@@ -9,4 +9,9 @@ layout: base.njk
     <div class="vibe"></div>
     <div class="love">❤️ Jamstack ❤️</div>
 </div>
+
+{% for item in news %}
+    <a href="/{{ item.country }}">{{ item.country }}</a>
+{% endfor %}
+
 <script src="/js/vibe.js"></script>
