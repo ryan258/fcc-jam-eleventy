@@ -1,5 +1,7 @@
 Following along with [JAMstack Course - Build websites that are simpler, faster, and more secure](https://www.youtube.com/watch?v=A_l0qrPUJds)
 
+Note to self: Got stuck at 3:03:31 - circle back around after a Netlify training to see if we can't get unstuck.
+
 - $ npm start
 - $ npm run build
 
