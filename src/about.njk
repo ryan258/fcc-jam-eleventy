@@ -1,17 +1,15 @@
 ---
-title: About Towelie
+title: About this page for you
 layout: base.njk
 ---
 
 <div class="container">
-    <h1>About Towelie</h1>
-    <img src="https://media.giphy.com/media/l0HlRDXTV4uZn3h6g/giphy.gif" alt="Towelie"/>
-    <div class="vibe"></div>
-    <div class="love">❤️ Jamstack ❤️</div>
+  <h1>This page is really for you!</h1>
+  <p>It was made for you using HTML, CSS and JavaScript. And served as a JAMStack site.</p>
 </div>
 
-{% for item in news %}
-    <a href="/{{ item.country }}">{{ item.country }}</a>
-{% endfor %}
 
-<script src="/js/vibe.js"></script>
+{% for item in news %}
+  <a href="/{{ item.country}}">{{ item.country }}</a>
+{%  endfor %}
+
